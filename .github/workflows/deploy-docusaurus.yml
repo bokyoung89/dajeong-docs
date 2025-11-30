@@ -19,7 +19,7 @@ jobs:
         run: npm ci
   
       - name: Generate API docs from spec
-        run: npm run docusaurus gen-api-docs:api
+        run: npm run docusaurus gen-api-docs api
 
       - name: Build
         run: npm run build
