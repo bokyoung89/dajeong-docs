@@ -1,0 +1,71 @@
+---
+id: get-contents-by-emotion
+title: "새로운 필사 문장 조회 API"
+description: "감정 및 상황에 따른 새로운 문장을 추천합니다."
+sidebar_label: "새로운 필사 문장 조회 API"
+hide_title: true
+hide_table_of_contents: true
+api: eJytk09rE0EYxr/K8J5aGJpV8LI3QZHexD+nEsJkM01W919nZoNh2UOTPaS0YMWmat1IAy1YiBDUhAh+ouzsd5DZTGyMoVD0tMPsO+/zvL95JgJGeeB7nHIwI7hrGOpTo9xidiBs3wMTnoaWRTmHOMYrf2ajY3neQ9noNZKd/fzDlXx3jLKTUXY5RbLTzQapPPuOsuFUfrqU/QTJyYn8mua9q+ywmx1ebAEGP6CMqHbbNTChTkXF8j1BPcEr1VaFun4hhSEgjLhUUMbB3Fl1OBdHeftCfjzK3qZoQybneaePZHuY975gJN93TSR/pLPxcBMweMSlYAK3RUh0f1v12QspawEGbjWoSxQJ0QqKSsFsr64IRPPKgIgGrOKQBz/zN2k2SNFsPMwmSXacIo1o2ZryMpuO5P5nnJ8eZN/GS5auB2Z0L7QZrYEpWEhv8lTGIEhdcQEoY3CpaPgaZgFONMCE0hqspUgvYjUzZc0F3ZA56kjJ8S3iNHwuzHuGYZRIYINSs71dvzBiC0c5eUBeUN+ro/uPtwGD6jLncWfL+IvRIjKTRCb9IjnzeOhsFD1iDIHPhUs8paLJXOcp7yWyPfx9bjDKz4609h9aEeiZ/09SNXZBX4lS4BDbUz4LUpGGvAPrs2sulmUMiqaqjKIq4fQ5c+JYbc+TVyTb5qTqqHvfJQ6nN8x029SvHeAlba28hCZxQlVXXHWTMFvZuaW1jSc6vZvoXx7FWsd6k3itZbOLSRao43K89BQePXwGcfwLRskcNA==
+sidebar_class_name: "get api-method"
+info_path: docs/dajeong-api/current/dajeong-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"새로운 필사 문장 조회 API"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/contents_by_emotion/{emotion}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+감정 및 상황에 따른 새로운 문장을 추천합니다.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"description":"상황 키워드 (선택 사항, 예: 친구)","name":"situation","in":"query","schema":{"type":"string"}},{"in":"path","description":"쉼표로 구분된 감정 키워드 (예: 기쁨,행복)","name":"emotion","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: post-analyze-mood
+title: "감정 및 상황 분석 API"
+description: "사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다."
+sidebar_label: "감정 및 상황 분석 API"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFU01P20AQ/SvWnLckrdSLb/06cCoq9BRFaGMPiantNbtrILUs0TaVKnGAA2lTlKBUBalIHKKmQj3wi+L1f6hm44gUpF7ry65n5+u9N5OBRJWIWKECN4NH9TodPipPBokORAwurKeeh0pBnrM7L+b9lTm9NGfHs8mBY84+FuOLsj90iqvf5uzCjHpOcd0zvVHZH5gvV85scmzG/dn0xjEf3pVfL8nBHI6Kaa/sD2bTMXPMsFd8G5rRYCmFuT4xP4dl/7I4/FQcnq8AA5Gg5NTCqg8uJELpTR7zsPsWNyMhfGAgcSdFpZ8Kv0t4PBFrjDVdeZKEgWeja9uKUGSgvA5GnG4UF0j0wW2Axn0NTQaJpHo6mDNkrXR2EwQXlJZB3Ia7xCxwjysgwAD3eZSEFFOe3Mym50RU2R8U33+YwYH5/MucnqxYiqvMorWNnoacTLdtaZki+fC2oh6pvwh1RyyIAAYJ1x1woVZRoVDuoiTvDFIZ0kstFB4PO0Jp93G9Xq/xJIC8yYD4eHXL3ItFxwvU/+ycQRBvCescaIvzOd9GEbedJ2urwICamJPzcKV+j7D5bFTz4hSTo4q4Sn6bI2cWYsStaDGPcClwclRN1SLHvOpfVZYG4X+NbiUu8VlLQh7EhMrKklXCNcAK12RAAtF/lrW4wtcyzHMy76Qou+A2mgx2uQx4i8huNHMGHeQ+Sqv0G+yCC8/mcB9sUFVyD1Oqfm8H8uUxWnu5vgEMWtXuRMKnGMn3aK/4HrhgV5Ci7UZYWwYhj9spb5PvPCd9fwCc4+qZ
+sidebar_class_name: "post api-method"
+info_path: docs/dajeong-api/current/dajeong-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"감정 및 상황 분석 API"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/mood"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["text"],"properties":{"text":{"type":"string","description":"분석할 문장","example":"피곤한 하루였어요."}},"type":"object"}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success"}}}
+>
+  
+</StatusCodes>
+
+
+      
