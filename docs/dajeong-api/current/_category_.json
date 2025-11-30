@@ -1,0 +1,8 @@
+{
+  "label": "다정문장 API",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "현재 제공되는 API 목록입니다."
+  }
+}
