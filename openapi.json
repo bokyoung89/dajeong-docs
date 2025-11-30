@@ -42,7 +42,7 @@
           }
         },
         "summary": "감정 및 상황 분석 API",
-        "description": "(GitAction 테스트) 사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.",
+        "description": "사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.",
         "operationId": "post_analyze_mood",
         "parameters": [
           {
