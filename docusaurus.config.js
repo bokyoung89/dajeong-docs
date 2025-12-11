@@ -93,9 +93,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'userGuideSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: '사용자 가이드',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'devGuideSidebar',
+            position: 'left',
+            label: '개발자 가이드',
           },
           {
             type: 'docSidebar',
