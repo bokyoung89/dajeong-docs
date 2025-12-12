@@ -1,0 +1,100 @@
+swagger: '2.0'
+basePath: /api
+paths: !!python/object/apply:collections.OrderedDict
+- - - /contents_by_emotion/{emotion}
+    - parameters:
+      - in: path
+        description: '쉼표로 구분된 감정 키워드 (예: 기쁨,행복)'
+        name: emotion
+        required: true
+        type: string
+      get:
+        responses:
+          '200':
+            description: 성공적으로 문장을 조회했습니다.
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Content'
+        summary: 새로운 필사 문장 조회 API
+        description: 감정 및 상황에 따른 새로운 문장을 추천합니다.
+        operationId: get_contents_by_emotion
+        parameters:
+        - description: '상황 키워드 (선택 사항, 예: 친구)'
+          name: situation
+          type: string
+          in: query
+        - name: X-Fields
+          in: header
+          type: string
+          format: mask
+          description: An optional fields mask
+        tags:
+        - ''
+  - - /mood
+    - post:
+        responses:
+          '200':
+            description: 성공적으로 문장을 조회했습니다.
+            schema:
+              type: array
+              items:
+                $ref: '#/definitions/Content'
+        summary: 감정 및 상황 분석 API
+        description: 사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.
+        operationId: post_analyze_mood
+        parameters:
+        - name: payload
+          required: true
+          in: body
+          schema:
+            $ref: '#/definitions/MoodInput'
+        - name: X-Fields
+          in: header
+          type: string
+          format: mask
+          description: An optional fields mask
+        tags:
+        - ''
+info:
+  title: Dajeong API
+  version: '1.0'
+  description: 감정 분석 및 문장 추천 API
+produces:
+- application/json
+consumes:
+- application/json
+tags:
+- name: ''
+  description: 감정 분석 및 문장 추천 API
+definitions:
+  MoodInput:
+    required:
+    - text
+    properties: !!python/object/apply:collections.OrderedDict
+    - - - text
+        - type: string
+          description: 분석할 문장
+          example: 피곤한 하루였어요.
+    type: object
+  Content:
+    properties: !!python/object/apply:collections.OrderedDict
+    - - - sentence
+        - type: string
+          description: 추천 문장 내용
+          example: 어제는 끝났고, 내일은 멀었고, 오늘은 아직 모른다.
+      - - author
+        - type: string
+          description: 작가
+          example: 유미지
+      - - title
+        - type: string
+          description: 출처
+          example: 미지의 서울
+    type: object
+responses:
+  ParseError:
+    description: When a mask can't be parsed
+  MaskError:
+    description: When any error occurs on mask
+host: localhost:5000

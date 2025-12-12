@@ -175,7 +175,7 @@ plugins: [
         docsPluginId: "classic",
         config: {
           api: { // Note: petstore key is treated as the <id> and can be used to specify an API doc instance when using CLI commands
-            specPath: "openapi.json", // Path to designated spec file
+            specPath: "swagger.yaml", // Path to designated spec file
             outputDir: "docs/dajeong-api/current", // Output directory for generated .mdx docs
             // sidebarOptions: {
             //   groupPathsBy: "tag",
