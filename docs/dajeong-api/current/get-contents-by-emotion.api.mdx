@@ -1,11 +1,11 @@
 ---
 id: get-contents-by-emotion
 title: "새로운 필사 문장 조회 API"
-description: "감정 및 상황에 따른 새로운 문장을 추천합니다."
+description: "사용자의 감정과 상황을 기반으로 위로 문장을 추천합니다."
 sidebar_label: "새로운 필사 문장 조회 API"
 hide_title: true
 hide_table_of_contents: true
-api: eJytk09rE0EYxr/K8J5aGJpV8LI3QZHexD+nEsJkM01W919nZoNh2UOTPaS0YMWmat1IAy1YiBDUhAh+ouzsd5DZTGyMoVD0tMPsO+/zvL95JgJGeeB7nHIwI7hrGOpTo9xidiBs3wMTnoaWRTmHOMYrf2ajY3neQ9noNZKd/fzDlXx3jLKTUXY5RbLTzQapPPuOsuFUfrqU/QTJyYn8mua9q+ywmx1ebAEGP6CMqHbbNTChTkXF8j1BPcEr1VaFun4hhSEgjLhUUMbB3Fl1OBdHeftCfjzK3qZoQybneaePZHuY975gJN93TSR/pLPxcBMweMSlYAK3RUh0f1v12QspawEGbjWoSxQJ0QqKSsFsr64IRPPKgIgGrOKQBz/zN2k2SNFsPMwmSXacIo1o2ZryMpuO5P5nnJ8eZN/GS5auB2Z0L7QZrYEpWEhv8lTGIEhdcQEoY3CpaPgaZgFONMCE0hqspUgvYjUzZc0F3ZA56kjJ8S3iNHwuzHuGYZRIYINSs71dvzBiC0c5eUBeUN+ro/uPtwGD6jLncWfL+IvRIjKTRCb9IjnzeOhsFD1iDIHPhUs8paLJXOcp7yWyPfx9bjDKz4609h9aEeiZ/09SNXZBX4lS4BDbUz4LUpGGvAPrs2sulmUMiqaqjKIq4fQ5c+JYbc+TVyTb5qTqqHvfJQ6nN8x029SvHeAlba28hCZxQlVXXHWTMFvZuaW1jSc6vZvoXx7FWsd6k3itZbOLSRao43K89BQePXwGcfwLRskcNA==
+api: eJy1VV1rG0cU/SvDfUpgGqmFvuyboR/krZQWCsGYsTS21tmvzI5MxLJgyfugOIE6NHJVdWVkcEhUVKrGllHBv2jn7n8oM9qtZcs1MaX7ssPs3HPPnHPv3QgEDwPfC3kIVgSfVav6VedhTdiBtH0PLMDkz+xshqM2ppfqJCVqMsfjtzhMCJ5M88Gr/KiLBzP1sqtenj4CCjXfk9yTGogFgWPXmAaq7IQaLYKw1uAu0yvZCjhYwIRgLaBgS+4aFoHwAy6kveAUcg1X40sRoRS2tw30JtGLN/ih5EdU5xwHY6DAnzM3cHQcHp3jKFUHb4hqD1Vnkp2NqDk3vMThHlHjPfy5azaxf6oO+noTewm+axP123v1dm5uGFNgTdnwxUcwOn6dTfeuc0hH6o85vtvTONKWzkddLMUP/WswCwwc9gkmKQ7mEGu4BYq/ucNrEmLzrGB1JjgY4/Ghjs2mhzjqZWeXBPfb+S9jbWo2n6ppv/Aa0+SG5UbjvDe+8lubZSx+XAcLtrncKCog3NhsbXDXN5kpBEwwl0suQrCerBSZyU/yzin++kr9lJIHmIzy/SHBziTv/a4d6VoE/0qz2eQhUPCYawSzZZMV+LbGedbkQhfTSpUV0sYxjcrgHz75yuZOPSxjG5zVuVhRf80jvlkzh2yZAOKy8OkdSShs+cJlEiwwJ01SkyJgsrFq74vL/HWqdc5mE3WRqMO0cOaaHlqAbD7F9nuaH71QZ7MlHa5UFvxZ0xa8DpYUTX6XEOsUJNvWZgCsU3C5bPiFg8Yt2QALKrd4WYmKRaw14GK3tLQpHB1Scfwacxp+KK3Pq9VqhQU26Gy2t+UbIouqhy/YDve9bbL2zWOgoFEWenz6qLqiUaGHukgwGRI1/bFs86LpNUZMIfBD6TIzZwplcL+rTlIcnJO8l2Bn8k+cmV1F7mu5oqsJ9j90S+GC5M9lJXCY7WnaRrio0PwJ3N4/Vrlcp6DF1SejaJOF/HvhxLHeXlS/6S47ZJuOLoMt5oT8rives/NuvcBT3rrRjbvMaepzxvldJmxN557UHnxbFPND8l965FbG5c/Hay2TLW9SSh2vx7ScC/fj/u9T4w4BlybSlX40Kr6u1Wo8kEvfVn6v8XIff/3ldxDHfwPND1+L
 sidebar_class_name: "get api-method"
 info_path: docs/dajeong-api/current/dajeong-api
 custom_edit_url: null
@@ -36,7 +36,7 @@ import Heading from "@theme/Heading";
 
 
 
-감정 및 상황에 따른 새로운 문장을 추천합니다.
+사용자의 감정과 상황을 기반으로 위로 문장을 추천합니다.
 
 <Heading
   id={"request"}
@@ -47,7 +47,7 @@ import Heading from "@theme/Heading";
 </Heading>
 
 <ParamsDetails
-  parameters={[{"description":"상황 키워드 (선택 사항, 예: 친구)","name":"situation","in":"query","schema":{"type":"string"}},{"in":"path","description":"쉼표로 구분된 감정 키워드 (예: 기쁨,행복)","name":"emotion","required":true,"schema":{"type":"string"}}]}
+  parameters={[{"description":"상황 키워드 (선택 사항, 예: 친구)","name":"situation","in":"query","schema":{"type":"string"}},{"name":"X-Fields","in":"header","description":"An optional fields mask","schema":{"type":"string","format":"mask"}},{"in":"path","description":"쉼표로 구분된 감정 키워드 (예: 기쁨,행복)","name":"emotion","required":true,"schema":{"type":"string"}}]}
 >
   
 </ParamsDetails>
@@ -62,7 +62,7 @@ import Heading from "@theme/Heading";
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Success"}}}
+  responses={{"200":{"description":"성공적으로 문장을 조회했습니다.","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"sentence":{"type":"string","description":"추천 문장 내용","example":"어제는 끝났고, 내일은 멀었고, 오늘은 아직 모른다."},"author":{"type":"string","description":"작가","example":"유미지"},"title":{"type":"string","description":"출처","example":"미지의 서울"}},"type":"object"}}}}}}}
 >
   
 </StatusCodes>

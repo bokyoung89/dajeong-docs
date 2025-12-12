@@ -5,7 +5,7 @@ description: "사용자가 입력한 문장을 분석하여 감정과 상황을 
 sidebar_label: "감정 및 상황 분석 API"
 hide_title: true
 hide_table_of_contents: true
-api: eJzFU01P20AQ/SvWnLckrdSLb/06cCoq9BRFaGMPiantNbtrILUs0TaVKnGAA2lTlKBUBalIHKKmQj3wi+L1f6hm44gUpF7ry65n5+u9N5OBRJWIWKECN4NH9TodPipPBokORAwurKeeh0pBnrM7L+b9lTm9NGfHs8mBY84+FuOLsj90iqvf5uzCjHpOcd0zvVHZH5gvV85scmzG/dn0xjEf3pVfL8nBHI6Kaa/sD2bTMXPMsFd8G5rRYCmFuT4xP4dl/7I4/FQcnq8AA5Gg5NTCqg8uJELpTR7zsPsWNyMhfGAgcSdFpZ8Kv0t4PBFrjDVdeZKEgWeja9uKUGSgvA5GnG4UF0j0wW2Axn0NTQaJpHo6mDNkrXR2EwQXlJZB3Ia7xCxwjysgwAD3eZSEFFOe3Mym50RU2R8U33+YwYH5/MucnqxYiqvMorWNnoacTLdtaZki+fC2oh6pvwh1RyyIAAYJ1x1woVZRoVDuoiTvDFIZ0kstFB4PO0Jp93G9Xq/xJIC8yYD4eHXL3ItFxwvU/+ycQRBvCescaIvzOd9GEbedJ2urwICamJPzcKV+j7D5bFTz4hSTo4q4Sn6bI2cWYsStaDGPcClwclRN1SLHvOpfVZYG4X+NbiUu8VlLQh7EhMrKklXCNcAK12RAAtF/lrW4wtcyzHMy76Qou+A2mgx2uQx4i8huNHMGHeQ+Sqv0G+yCC8/mcB9sUFVyD1Oqfm8H8uUxWnu5vgEMWtXuRMKnGMn3aK/4HrhgV5Ci7UZYWwYhj9spb5PvPCd9fwCc4+qZ
+api: eJzFVF1v2zYU/SvCfWZjb8Be9JZ9AX1qsXXAAMMoGIuxlUqiStJZPUGAk3lAkBRoB8Sta9iBgyVoPQSYV7dFHvKLTOo/DJeSFrvusrxND7ZE3nt0eM65SkAwGfNIMgluAp9Xq/jnMdkQfqx8HoELpvfXYv7eTPbM6Eqfjhx9cWlOzs2455jTWTZ8mr04MIfv9dGBPjrbAAINHikWKQSicRz4DYpAlR2JaAnIRouFFO9UJ2bgAhWCdoCAr1hoWcSCx0woP+ckGcI12FKHVMKPmkA+Jvrh2Lwt+Tl6/50ZToEAe0LDOMA+8+KdmYz04bGj98Z6/2IxnxBbN74y466jp13z8sAumsGZPhzgoun3zOs9R//xRp9f2hOmBGhbtbi4BaOT3xaz7iqH0UT/eWledxFH+Sq41cFG5u1gBSbHMOOBY3ojM7yEFOFyFL61wxoKUnutYe1fmOHUnDxfzLqOOflVT86z/rKp+kPP9MZZf2BeXjiL2XMz6S/mV475ZS97NbWuH431vJf1B7lSo54+HSGRpVxYI7L+9DoU6KjNwV0PXIi5VA9pRIPOz+xhyLkHBGIqaMgUExLcWgIRDfEsP9751meBJzEfSL/FqMfEmkKbkcPtPQ2cbdvghFQ+ArIet3803uYipApcsJVpWicg2OM2k+pL7nWw49ZJxj5fMA/cGij2REGdfJRiu/qfRpfaTwoxVyzPjq8W8zM0K+sP9O9vzKCLgR4eb3zafLJES4k2wxraRHUB+YVMtXhphtVftcCFSmGHZGK39KItAtypBLxBgxaXyv2iWq1WaOwDqoZ6fHet3Dcl4/LUNzJHX7e5Lc6HAb6mO4xHTWfz/l0ggCRycT7bqK4JluezyKyjZ8/K6S++BYiREnvEkFrTilyVjbNnRbJLjPytK29ZCsL/NT6FuahnJQ6oH+GprC1JYVwNrHF1AmgQPifJFpXsBxGkKS4/bjPRAbdWJ7BLhU+3UOxaPSXlTKHTni9xwwN3mwaS3SDEv0/cJ7k+Yp3Vad6lQRvLICVJsftVDn7nAQJcV6yN3nXHZqPBYnVj7XLS79/7/gEQ2CrGO+Qe9gj6ExD764L9UmG3HVq7lkBAo2abNrE2x8Trb022GcY=
 sidebar_class_name: "post api-method"
 info_path: docs/dajeong-api/current/dajeong-api
 custom_edit_url: null
@@ -47,7 +47,7 @@ import Heading from "@theme/Heading";
 </Heading>
 
 <ParamsDetails
-  parameters={undefined}
+  parameters={[{"name":"X-Fields","in":"header","description":"An optional fields mask","schema":{"type":"string","format":"mask"}}]}
 >
   
 </ParamsDetails>
@@ -62,7 +62,7 @@ import Heading from "@theme/Heading";
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Success"}}}
+  responses={{"200":{"description":"성공적으로 문장을 조회했습니다.","content":{"application/json":{"schema":{"type":"array","items":{"properties":{"sentence":{"type":"string","description":"추천 문장 내용","example":"어제는 끝났고, 내일은 멀었고, 오늘은 아직 모른다."},"author":{"type":"string","description":"작가","example":"유미지"},"title":{"type":"string","description":"출처","example":"미지의 서울"}},"type":"object"}}}}}}}
 >
   
 </StatusCodes>
