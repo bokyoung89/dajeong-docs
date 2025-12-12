@@ -20,6 +20,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Clean old API docs
+        run: rm -f docs/dajeong-api/current/*.mdx
+  
+      - name: Generate API docs from spec
+        run: npm run docusaurus gen-api-docs api
+
       - name: Build
         run: npm run build
 
