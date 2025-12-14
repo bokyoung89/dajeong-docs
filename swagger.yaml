@@ -35,11 +35,9 @@ paths:
     post:
       responses:
         '200':
-          description: 성공적으로 문장을 조회했습니다.
+          description: 성공적으로 분석 및 추천을 완료했습니다.
           schema:
-            type: array
-            items:
-              $ref: '#/definitions/Content'
+            $ref: '#/definitions/MoodResponse'
       summary: 감정 및 상황 분석 API
       description: 사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.
       operationId: post_analyze_mood
@@ -76,6 +74,21 @@ definitions:
         type: string
         description: 분석할 문장
         example: 피곤한 하루였어요.
+    type: object
+  MoodResponse:
+    properties:
+      emotion:
+        type: string
+        description: 분석된 감정
+      situation:
+        type: string
+        description: 분석된 상황
+      encouragement:
+        type: string
+        description: 추천 문장
+      source:
+        type: string
+        description: 추천 문장 출처
     type: object
   Content:
     properties:
