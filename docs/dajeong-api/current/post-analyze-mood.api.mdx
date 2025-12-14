@@ -1,11 +1,11 @@
 ---
 id: post-analyze-mood
-title: "사용자 입력 문장 분석 기반 위로 문장 추천 API"
+title: "입력 문장 기반 필사 문구 조회"
 description: "사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 이를 바탕으로 위로 문장을 추천합니다."
-sidebar_label: "사용자 입력 문장 분석 기반 위로 문장 추천 API"
+sidebar_label: "입력 문장 기반 필사 문구 조회"
 hide_title: true
 hide_table_of_contents: true
-api: eJzNVE1v00AQ/SvWnJcmIHHxrXxJPVHxISFFEdra28TF9prddSFYlgoECVEkemhKWqVVUKlEpR4CoVUP/UXx+j+gWdttaKEqN3JIHHve85v3ZjYBwWTEQ8kk2AncqNfxx2XSEV6kPB6CDbr7fTI+1MPXenCSfRlY2VFXd7etbPTJ0kfr+sdAb3ctvdnNdj/mG+/1h8Ns9X22+nUGCDg8VCxUyEmjyPccipy1JYnECUinzQKKV5HgERPKK2SwgBfvTkB1IgY2SCW8sAXknLRCSrY2sCajNT3sQUpAeiqm/wrXb1/nm/sIZ6HDY0FbLCiFX05ROGBlB8d6Z8+8nsfCYf8ItPTRQP/oQ5qSCsYXlpijIMXPBeybA721r3fWJqMVS++8y4Z7ea/iwjSKxvJeX38+KK2ZjE/KLk1cq9vZuJv3+pPxkFh6+2e2d2Jlo/X8ba9MWQ+6JuxTzkJw3ts/ixczM1bPuWBDxKV6SkPqd16xpwHnLhCIqKABU0xIsBsJhDTA3p5cu+cx35VAwMN+2oy6TFywaDa0uLmmvrVoAFZA5TMgU4Nz3uRFLgKqwAZTmaZNAoI9j5lUt7jbQcSVZxJxnmAu2A1Q7KWCJjk3p+buFacs7w2rKSHAXtIg8hGTr59Mxl8xvbzXz3a/6f6K3vipt9Zn/jwMZEqWEjHDGtpCdwH1BUy1eRWG8V+1wYZaGYdkYrnKIhY+Pqn53KF+m0tl36zX6zUaeYCuoR8Pzpy7Wymuur5UOea6yE2xp0yfd+gS42HLmp2fAwIoojDn+kz9gmHFwE6fM6dbYnYGOVJiWgyoCa2cq9O9KJeiwpVMk+NRNur/PtnTnOd0TI3Kf7Nx5TxgBLXIp16IRpgkkzLrBpismwQwU/yfJAtUssfCT1O8/TxmogN2o0lgmQqPLmA+jWZKqjXE4XA9iQ9csBepL9klzvx9Sf+o9Rnr/H4ALFM/xjJISVI+vV2QX3uEBGcVF7b1DDHrOCxSl9ZOL8f8/YePgMBCeSIE3EWMoC+AmG8bzOGGaLPn5l4CPg1bMW1hbcGJn1/KjSUO
+api: eJzNVMtu00AU/RXrrocmILHxrrwkViAeElIUoak9TdzaHjMzLgTLEo8gIVqJLmpIq7QKgkpUyiIQWrHoF8Xjf0B3bNPQQgU7vPBj5p47555zrxMQTEY8lEyCncClZhMfLpOO8CLl8RBs0P0vs+mhHj3Xw+P8w9DKj/q6v2vlk7eWPtrSX4d6t2/p7X7+caN491q/OczXX+frnxaAgMNDxUKFOWkU+Z5DMWdjRWLiBKTTZQHFt0jwiAnllTRYwMuzE1C9iIENUgkv7AA5Ra2kkm8OrdlkU48ySAlIT8X0X+H65fNi+wDhLHR4LGiHBRXx81OUClj5+Lve2zfH81g47B+Blj4a6q8DSFNSw/jSCnMUpHidwb4Y650Dvbc5mzyz9N6rfLRfZHUudKMsrMgG+v24kmY2Pa6qNHat7+bTfpENZtMRsfTut3z/2MonW8XLrHJZD/vG7J85S8JFdnBiL3pmpL7pgg0Rl+ohDanfe8oeBpy7QCCiggZMMSHBbiUQ0gBre3Dhhsd8VwIBD+vpMuoycUaixdDi5p361rIBWAGVq0DmGue0yMtcBFSBDSYyTdsEBHsUM6mucLeHiL/uScR5grlgt0CxJwra5FSfmtW/7LIiG9VdQoA9oUHkI6bYOp5NP6F7RTbIP37Wg2f63Te9s7Xw+2Ygc7SUiBnG0A6qC8gvYKrLazOM/qoLNjQqOyQTa7UXsfBxp+Fzh/pdLpV9udlsNmjkAaqGetw5Ue56zbiu+lzm6OsyN8GeMnVeoyuMhx1r8fZNIIAkSnEuLjTPCFY27Px/5ueUmJnBHCkxJQbUmFb1VTkKdfTs+ySfDKwi6+sXY1ycHY4t/WFS7GycPnKuK/6b4aqsR7UbkU+9EGs2piWVrS0wtrYJoH34nSRLVLL7wk9TXH4UM9EDu9UmsEaFR5fQilY7JfXEYR+4nsQNF+xl6kt2jjJ/nsffcl1lvV9nfY36MYZBSpJq92qZ/MI9THAScWYwTxCLjsMidW7s/BzcvnX3HhBYqoY/4C5iBH0MxNxtMP8xRJuRNmsJ+DTsxLSDsWVOvH4A+yEZJw==
 sidebar_class_name: "post api-method"
 info_path: docs/dajeong-api/current/dajeong-api
 custom_edit_url: null
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"사용자 입력 문장 분석 기반 위로 문장 추천 API"}
+  children={"입력 문장 기반 필사 문구 조회"}
 >
 </Heading>
 
