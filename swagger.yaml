@@ -16,8 +16,8 @@ paths:
             type: array
             items:
               $ref: '#/definitions/Content'
-      summary: 새로운 필사 문장 조회 API
-      description: 사용자의 감정과 상황을 기반으로 위로 문장을 추천합니다.
+      summary: 사용자 감정 기반 문장 조회 API
+      description: 감정 정보를 입력받아 해당 감정을 위로하는 문장을 추천합니다.
       operationId: get_contents_by_emotion
       parameters:
       - description: '상황 키워드 (선택 사항, 예: 친구)'
@@ -38,8 +38,8 @@ paths:
           description: 성공적으로 분석 및 추천을 완료했습니다.
           schema:
             $ref: '#/definitions/MoodResponse'
-      summary: 감정 및 상황 분석 API
-      description: 사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.
+      summary: 사용자 입력 문장 분석 기반 위로 문장 추천 API
+      description: 사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 이를 바탕으로 위로 문장을 추천합니다.
       operationId: post_analyze_mood
       parameters:
       - name: payload
