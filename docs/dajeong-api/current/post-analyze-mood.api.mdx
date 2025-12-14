@@ -1,11 +1,11 @@
 ---
 id: post-analyze-mood
-title: "감정 및 상황 분석 API"
-description: "사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다."
-sidebar_label: "감정 및 상황 분석 API"
+title: "사용자 입력 문장 분석 기반 위로 문장 추천 API"
+description: "사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 이를 바탕으로 위로 문장을 추천합니다."
+sidebar_label: "사용자 입력 문장 분석 기반 위로 문장 추천 API"
 hide_title: true
 hide_table_of_contents: true
-api: eJzFVM9P1EAU/leadx7Z1cRLb/gr8SRRTEw2GzK0w26x7ZSZKbo2TUTXhIiJHFhdzUKWAIkkHJAV4oG/aDv9H8ybtrICEjzZw24787433/u+9yYBwWTEQ8kk2Ancqtfxz2XSEV6kPB6CDbr7fTw61sMVPTjNtgdWdtLV3U0rO/xo6ZMNfTTQm11Lf+lmOx/yT6v6/XG2tpqt7U4BAYeHioUKc9Io8j2HYs7aosTECUinzQKKb5HgERPKK2iwgBdnJ6A6EQMbpBJe2AJyjlpBJVsfWOPDdT3sQUpAeiqm/wrXb1fyL/sIZ6HDY0FbLCiJX52iUMDKDn7qrT1zPI+Fw/4RaOmTgT7qQ5qSCsbnF5mjIMXnAvbNgf66r7fWx4evLb31Lhvu5b0qF7pRFJb3+vrzQSnNeHRaVmnsWtvMRt281x+PhsTSg262PdCb/YkUBb+8t3/mJlpklH3ogg0Rl2qOhtTvvGJzAecuEIiooAFTTEiwGwmENMBSnt144DHflUDAQ/ptRl0mLigyHVrcvFPfWjAAK6DyOZCJPjmv6QIXAVVgg4lM0yYBwZZiJtUd7nYQce0WRJwnmAt2AxR7qaBJzrWlWb1mU+W9YdUUBNhLGkQ+YvKN0/FoF83Ke/1s55vuv9affuivG1OXe08maCkRM4yhLVQXkF/AVJtXZhj9VRtsqJV2SCaWKy9i4eNOzecO9dtcKvt2vV6v0cgDVA31eHym3P2KcVX1lczR1wVugj1l6rxHFxkPW9b0zEMggCQKcW5O1S8IVvTn5LXyeyjMiGCOlJgSA2pMK/uqAuJFZDq7ylGc+scpE43wv8anNBf1rEU+9UKsytiSlMY1wBjXJIAG4XeSzFPJngo/TXF5KWaiA3ajSWCZCo/Oo9iNZkqqmUKnXU/ihgv2AvUlu0KIv0/cpVyfs86f07xM/RjDICVJuXu3SH5jFhOcRVwYvTPEtOOwSF0ZO9npM4+ezAKB+XK8A+4iRtAXQMyvDeamQrQZWrOWgE/DVkxbGFvkxOcXuh/3vA==
+api: eJzNVE1v00AQ/SvWnJcmIHHxrXxJPVHxISFFEdra28TF9prddSFYlgoECVEkemhKWqVVUKlEpR4CoVUP/UXx+j+gWdttaKEqN3JIHHve85v3ZjYBwWTEQ8kk2AncqNfxx2XSEV6kPB6CDbr7fTI+1MPXenCSfRlY2VFXd7etbPTJ0kfr+sdAb3ctvdnNdj/mG+/1h8Ns9X22+nUGCDg8VCxUyEmjyPccipy1JYnECUinzQKKV5HgERPKK2SwgBfvTkB1IgY2SCW8sAXknLRCSrY2sCajNT3sQUpAeiqm/wrXb1/nm/sIZ6HDY0FbLCiFX05ROGBlB8d6Z8+8nsfCYf8ItPTRQP/oQ5qSCsYXlpijIMXPBeybA721r3fWJqMVS++8y4Z7ea/iwjSKxvJeX38+KK2ZjE/KLk1cq9vZuJv3+pPxkFh6+2e2d2Jlo/X8ba9MWQ+6JuxTzkJw3ts/ixczM1bPuWBDxKV6SkPqd16xpwHnLhCIqKABU0xIsBsJhDTA3p5cu+cx35VAwMN+2oy6TFywaDa0uLmmvrVoAFZA5TMgU4Nz3uRFLgKqwAZTmaZNAoI9j5lUt7jbQcSVZxJxnmAu2A1Q7KWCJjk3p+buFacs7w2rKSHAXtIg8hGTr59Mxl8xvbzXz3a/6f6K3vipt9Zn/jwMZEqWEjHDGtpCdwH1BUy1eRWG8V+1wYZaGYdkYrnKIhY+Pqn53KF+m0tl36zX6zUaeYCuoR8Pzpy7Wymuur5UOea6yE2xp0yfd+gS42HLmp2fAwIoojDn+kz9gmHFwE6fM6dbYnYGOVJiWgyoCa2cq9O9KJeiwpVMk+NRNur/PtnTnOd0TI3Kf7Nx5TxgBLXIp16IRpgkkzLrBpismwQwU/yfJAtUssfCT1O8/TxmogN2o0lgmQqPLmA+jWZKqjXE4XA9iQ9csBepL9klzvx9Sf+o9Rnr/H4ALFM/xjJISVI+vV2QX3uEBGcVF7b1DDHrOCxSl9ZOL8f8/YePgMBCeSIE3EWMoC+AmG8bzOGGaLPn5l4CPg1bMW1hbcGJn1/KjSUO
 sidebar_class_name: "post api-method"
 info_path: docs/dajeong-api/current/dajeong-api
 custom_edit_url: null
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"감정 및 상황 분석 API"}
+  children={"사용자 입력 문장 분석 기반 위로 문장 추천 API"}
 >
 </Heading>
 
@@ -36,7 +36,7 @@ import Heading from "@theme/Heading";
 
 
 
-사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 위로의 문장을 추천합니다.
+사용자가 입력한 문장을 분석하여 감정과 상황을 식별하고, 이를 바탕으로 위로 문장을 추천합니다.
 
 <Heading
   id={"request"}
