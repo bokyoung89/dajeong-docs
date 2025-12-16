@@ -97,12 +97,12 @@ const config = {
             position: 'left',
             label: '사용자 가이드',
           },
-          {
-            type: 'docSidebar',
-            sidebarId: 'devGuideSidebar',
-            position: 'left',
-            label: '개발자 가이드',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'devGuideSidebar',
+          //   position: 'left',
+          //   label: '개발자 가이드',
+          // },
           {
             type: 'docSidebar',
             sidebarId: 'apiSidebar', // sidebars.js에서 정의한 API 사이드바의 ID
